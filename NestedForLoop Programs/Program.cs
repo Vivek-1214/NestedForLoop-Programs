@@ -4,34 +4,28 @@ namespace Nested
 {
     class program
     {
-        public static void Main(String[] args) { 
+        public static void Main(String[] args) {
 
-            //write a program which shows table from 2 to 5 in on frame
-             int table;
-             
-             for(int i = 2; i <= 5; i++)
-             {
-                 for(int j=1;j<=10;j++)
-                 {
-                     table=i* j;                    // 2,4,6,8....20
-
-                     Console.WriteLine(table);
-                 } Console.WriteLine();
-             }
 
             // pattern_10by10();
             // pattern_4by6();
             // pattern_7by12();
-            //number_pattern_1234();
-            //number_pattern_54321();
-            //number_pattern_11111();
-            //number_pattern_55555();
+            //number_pattern_01();
+            //number_pattern_01_rev();
+            //number_pattern_02();
+            //number_pattern_02_rev();
 
             //star_Pattern_RightAngleTriangle();
             //number_Pattern_RightAngleTriangle();
 
             // star_Pattern_RightAngleTriangle_reverse();
             // number_pattern_RightAngleTriangle_reverse();
+            //number_pattern_03();
+            // ABCD_pattern();
+            ///ABCD_pattern_rev();
+             // abcd_pattern();
+            // AAAA_pattern();
+            AAAA_pattern_rev();
 
         }
 
@@ -75,7 +69,7 @@ namespace Nested
             }
         }
 
-        static void number_pattern_1234()
+        static void number_pattern_01()
         {
             //print no. pattern of 5 rows like 1234
 
@@ -89,7 +83,7 @@ namespace Nested
             }
         }
 
-        static void number_pattern_54321()
+        static void number_pattern_01_rev()
  {
             //print no. pattern of 5 rows like 54321
 
@@ -103,7 +97,7 @@ namespace Nested
             }
         }
 
-        static void number_pattern_11111()
+        static void number_pattern_02()
         {
             //print no. pattern of 5 rows like 11111
 
@@ -117,7 +111,7 @@ namespace Nested
             }
         }
 
-        static void number_pattern_55555()
+        static void number_pattern_02_rev()
         {
             //print no. pattern of 5 rows like 55555
 
@@ -182,6 +176,121 @@ namespace Nested
                 for (int j = 1; j <= i; j++)
                 {
                     Console.Write(j);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void number_pattern_03()
+  {
+            Console.WriteLine("Enter no of rows");
+            int r =Convert.ToInt32( Console.ReadLine());
+
+            Console.WriteLine("Enter no of columns");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            int k = 1;                             //pattern
+            for(int i = 1; i <= r; i++)    //row
+            {
+                for(int j = 1; j <= c; j++)   //coloumn
+                {
+                    Console.Write((k++) +" ");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        static void ABCD_pattern()
+        {
+
+            Console.WriteLine("Enter no of rows");
+            int r = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter no of columns");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= r; i++)    //row
+            {
+                for (int j = 1; j <= c; j++)   //coloumn
+                {
+                    Console.Write(Convert.ToChar(64+j));
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void ABCD_pattern_rev()
+        {
+
+            Console.WriteLine("Enter no of rows");
+            int r = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter no of columns");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= r; i++)    //row
+            {
+                for (int j = c; j >= 1; j--)   //coloumn
+                {
+                    Console.Write(Convert.ToChar(64 + j));
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void abcd_pattern()
+        {
+
+            Console.WriteLine("Enter no of rows");
+            int r = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter no of columns");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= r; i++)    //row
+            {
+                for (int j = 1; j <= c; j++)   //coloumn
+                {
+                    Console.Write(Convert.ToChar(96 + j));
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void AAAA_pattern()
+        {
+
+            Console.WriteLine("Enter no of rows");
+            int r = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter no of columns");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= r; i++)    //row
+            {
+                for (int j = 1; j <= c; j++)   //coloumn
+                {
+                    Console.Write(Convert.ToChar(64 + i));
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void AAAA_pattern_rev()
+        {
+
+            Console.WriteLine("Enter no of rows");
+            int r = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter no of columns");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = r; i >= 1; i--)    //row
+            {
+                for (int j = 1; j <= c; j++)   //coloumn
+                {
+                    Console.Write(Convert.ToChar(64 + i));
                 }
                 Console.WriteLine();
             }
