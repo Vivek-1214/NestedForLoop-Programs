@@ -1,7 +1,8 @@
 ﻿
-using Days2;
+using alphabet;
+using star;
 using System;
-namespace Nested
+namespace System
 {
     class program
     {
@@ -16,8 +17,15 @@ namespace Nested
             //number_pattern_02();
             //number_pattern_02_rev();
 
-            //star_Pattern_RightAngleTriangle();
-            //number_Pattern_RightAngleTriangle();
+            StarPattern star = new StarPattern();
+            // star .star_Pattern_01();
+            // star.star_Pattern_02();
+            //star.star_Pattern_03();
+            // star.star_Pattern_04();
+            // star.star_Pattern_05();
+            // star.star_Pattern_06();
+            star.star_Pattern_07();
+
 
             // star_Pattern_RightAngleTriangle_reverse();
             // number_pattern_RightAngleTriangle_reverse();
@@ -25,11 +33,11 @@ namespace Nested
 
             ABCDPattern P = new ABCDPattern();
 
-        P.ABCD_pattern();
+      //  P.ABCD_pattern();
            // P.ABCD_pattern_rev();
           // P.abcd_pattern();
             // AAAA_pattern();
-     P.AAAA_pattern_rev();
+    // P.AAAA_pattern_rev();
 
         }
 
@@ -45,6 +53,7 @@ namespace Nested
                  }
                     Console.WriteLine();
              }
+            Console.WriteLine("__________________________________________________");
         }
 
         static void pattern_4by6()
@@ -59,6 +68,7 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
         static void pattern_7by12()
@@ -71,6 +81,7 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
         static void number_pattern_01()
@@ -85,6 +96,7 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
         static void number_pattern_01_rev()
@@ -99,6 +111,7 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
         static void number_pattern_02()
@@ -113,6 +126,7 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
         static void number_pattern_02_rev()
@@ -127,21 +141,9 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
-        static void star_Pattern_RightAngleTriangle()
-        {
-            //Write a program  to display the " * " pattern like right angle triangle 
-
-            for (int i = 1; i <= 5; i++)
-            {
-                for(int j = 1; j <= i; j++)
-                {
-                    Console.Write('*'); 
-                }
-                Console.WriteLine();
-            }
-        }
 
         static void  number_Pattern_RightAngleTriangle()
         {
@@ -155,21 +157,10 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
-        static void star_Pattern_RightAngleTriangle_reverse()
-        {
-            //prine star pattern of 5 rows  base on number of rows reverse
 
-            for (int i = 5; i >= 1; i--)
-            {
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write('*');
-                }
-                Console.WriteLine();
-            }
-        }
 
         static void number_pattern_RightAngleTriangle_reverse()
         {
@@ -183,6 +174,7 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("__________________________________________________");
         }
 
         static void number_pattern_03()
@@ -202,7 +194,7 @@ namespace Nested
                 }
                 Console.WriteLine();
             }
-
+            Console.WriteLine("__________________________________________________");
         }
 
 
