@@ -7,13 +7,21 @@ using System.Threading.Tasks;
 namespace star
 {
     internal class StarPattern
-    { 
+    {
+
+        public int num { get; set; }
+
+        public void TakeNumber()
+        {
+            Console.WriteLine("Enter any number");
+            num = Convert.ToInt32(Console.ReadLine());
+        }
         
         public void star_Pattern_01()
         {
             //Write a program  to display the " * " pattern like right angle triangle 
 
-            int num=10;
+            TakeNumber();
             for (int i=1;i<=num;i++)
             {
                 for(int j = 1; j <= i; j++)
@@ -27,8 +35,8 @@ namespace star
         public void star_Pattern_02()
         {
             //prine star pattern of 5 rows  base on number of rows reverse
-
-            for (int i = 10; i >= 1; i--)
+            TakeNumber();
+            for (int i = num; i >= 1; i--)
             {
                 for (int j = i; j >= 1; j--)
                 {
@@ -40,7 +48,8 @@ namespace star
         }
         public void star_Pattern_03()
         {
-            int num = 5;
+            TakeNumber();
+           
             for (int i = 1; i <= num; i++)
             {
                 for (int j = 1; j <= i; j++)
@@ -49,7 +58,7 @@ namespace star
                 }
                 Console.WriteLine();
             }
-            for (int i = 5; i >= 1; i--)
+            for (int i = num; i >= 1; i--)
             {
                 for (int j = 1; j <= i; j++)
                 {
@@ -62,9 +71,9 @@ namespace star
 
         public void star_Pattern_04()
         {
-            int num = 10;
+            TakeNumber();
 
-            for(int i=1;i<=num;i++)
+            for (int i=1;i<=num;i++)
             {
                 for(int j = num - i; j>=1; j--)
                 {
@@ -81,8 +90,8 @@ namespace star
         }
         public void star_Pattern_05()
         {
-            int num = 10;
-                for (int i = 1; i <=num; i++)
+            TakeNumber();
+            for (int i = 1; i <=num; i++)
                 {
                     for (int j =1; j <= i; j++)
                     {
@@ -101,8 +110,7 @@ namespace star
 
         public void star_Pattern_06()
         {
-            int num = 10;
-
+            TakeNumber();
             for (int i = 1; i <= num; i++)
             {
                 for (int j = num - i; j >= 1; j--)
@@ -124,7 +132,8 @@ namespace star
         }
 
         public  void star_Pattern_07()
-        { int num=5;
+        {
+             TakeNumber();
             for (int i = 1; i <= num; i++)
             {
                 for(int j = num - i;j >= 1;j--)
@@ -142,7 +151,7 @@ namespace star
 
                 Console.WriteLine();
             }
-           for(int i = 1; i <= 5; i++)
+           for(int i = 1; i <= num; i++)
             {
                 for(int j=1;j<=i; j++)
                 {
